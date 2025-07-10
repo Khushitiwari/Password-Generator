@@ -5,6 +5,11 @@ A simple and customizable password generator built with **React** and **Tailwind
 
 ---
 
+## Preview
+
+![Project Screenshot](./Screenshot 2025-07-10 102446.png)
+
+
 
 ## 🚀 Features
 
