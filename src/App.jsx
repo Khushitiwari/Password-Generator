@@ -6,7 +6,7 @@ function App() {
   const [length, setLength] = useState(8)
   const [numberUsed , setNumberused] = useState(false)
   const [characters , setCharacters] = useState(false)
-  const [password, setPassword] = useState()
+  const [password, setPassword] = useState("")
 
   //useRef hook : used for taking reference of anything
    const passwordRef = useRef(null)
@@ -25,7 +25,7 @@ function App() {
      for (let i = 1; i <= length; i++) {
 
       
-      let char = Math.floor(Math.random()*str.length + 1) //generating random char till the length
+      let char = Math.floor(Math.random() * str.length + 1) //generating random char till the length
 
       pass += str.charAt(char) //concatenating the values
       
@@ -70,7 +70,7 @@ function App() {
 
         <div className='flex text-sm gap-x-5'>
 
-          <div className='flex items-corner gap-x-1'>
+          <div className='flex items-center gap-x-1'>
             <input 
             type='range'
             min={6}
@@ -83,7 +83,7 @@ function App() {
             <label>Length:{length}</label>
           </div>
 
-           <div className='flex items-corner gap-x-1'>
+           <div className='flex items-center gap-x-1'>
             <input 
             type='checkbox'
             defaultChecked ={numberUsed}
@@ -98,7 +98,7 @@ function App() {
           </div>
 
 
-          <div className='flex items-corner gap-x-1'>
+          <div className='flex items-center gap-x-1'>
             <input 
             type='checkbox'
             defaultChecked ={characters}
@@ -109,7 +109,7 @@ function App() {
             }}
              > </input>
 
-            <label htmlFor='chararctersInput'>Characters</label>
+            <label htmlFor='chararcterInput'>Characters</label>
           </div>
 
 
